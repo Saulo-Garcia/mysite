@@ -1,128 +1,205 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SACC Technologies | Soluções Digitais Inovadoras</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SACC Technologies | Segurança Jurídica</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
+  <body>
     <header>
-        <img src="image/logo.png" alt="Logo SACC Technologies" class="logo">
-        <div> <style>
-.material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 24
-}
-</style> </div>
+      <img src="image/logo.png" alt="Logo SACC Technologies" class="logo" />
     </header>
 
     <section class="hero">
-
-        <div class="logo"> Tecnologia e Solucoes Digitais</div>
-        <h1>Segurança e Sigilo para a <span>Advocacia do Futuro</span></h1>
-        <p>Proteja comunicações sensíveis e documentos críticos com a infraestrutura privada da SACC messenger.</p>
-        <a href="#" class="cta-button">Solicitar Demonstração</a>
+      <div class="tagline">
+        Tecnologia e Soluções Digitais para o seu Negócio
+      </div>
+      <h1>Transformamos suas Ideias em <span>Realidade Digital</span></h1>
+      <p>
+        Desenvolvemos sites, landing pages, e-commerce, bots, chatbots e
+        sistemas sob medida, garantindo inovação, eficiência e segurança para o
+        seu empreendimento.
+      </p>
+      <a href="#contato" class="cta-button">Solicite um Orçamento</a>
     </section>
 
-    <section class="features">
+    <!-- Nova Seção de Serviços -->
+    <section class="services">
+      <h2>Nossas Soluções Digitais</h2>
+      <div class="service-cards">
         <div class="card">
-            <h3>Sigilo Total</h3>
-            <p>Comunicações criptografadas de ponta a ponta em servidor privado, longe de grandes corporações.</p>
+          <span class="material-symbols-outlined icon">web</span>
+          <h3>Desenvolvimento Web</h3>
+          <p>
+            Criação de websites institucionais, landing pages otimizadas e
+            portfólios online que capturam a essência da sua marca.
+          </p>
         </div>
         <div class="card">
-            <h3>Efemeridade</h3>
-            <p>Documentos e mensagens que se autodestroem após a leitura, garantindo conformidade com a LGPD.</p>
+          <span class="material-symbols-outlined icon">shopping_bag</span>
+          <h3>E-commerce</h3>
+          <p>
+            Lojas virtuais completas e personalizadas para impulsionar suas
+            vendas online, com design atraente e funcionalidades robustas.
+          </p>
         </div>
         <div class="card">
-            <h3>Controle de Acesso</h3>
-            <p>Aprovação manual de membros. Apenas pessoas autorizadas entram no círculo de confiança.</p>
+          <span class="material-symbols-outlined icon">smartphone</span>
+          <h3>Aplicativos Mobile</h3>
+          <p>
+            Desenvolvimento de apps intuitivos para iOs e Android, focados em
+            usabilidade e performance para conectar sua marca aos clientes.
+          </p>
         </div>
-    </section>
-
-    <footer>
-        &copy; 2026 SACC Technologies - Desenvolvido por Saulo.
-    </footer>
-
-    <section id="contato" style="padding: 5rem 2rem; max-width: 600px; margin: 0 auto; text-align: center;">
-        <h2 style="color: var(--primary-cyan);">Solicitar Acesso Prioritário</h2>
-        <p>Preencha os dados abaixo e fale direto com nosso consultor técnico via WhatsApp.</p>
-
-        <form id="whatsappForm" style="display: flex; flex-direction: column; gap: 1rem; margin-top: 2rem;">
-            <input type="text" id="nome" placeholder="Seu Nome Completo" required
-                style="padding: 1rem; border-radius: 5px; border: 1px solid var(--secondary-blue); background: #1a1a1a; color: white;">
-
-            <input type="text" id="escritorio" placeholder="Nome do Escritório" required
-                style="padding: 1rem; border-radius: 5px; border: 1px solid var(--secondary-blue); background: #1a1a1a; color: white;">
-
-            <textarea id="mensagem" placeholder="Como podemos ajudar seu escritório hoje?" rows="4"
-                style="padding: 1rem; border-radius: 5px; border: 1px solid var(--secondary-blue); background: #1a1a1a; color: white;"></textarea>
-
-            <button type="button" onclick="enviarWhatsApp()" class="cta-button"
-                style="cursor: pointer; border: none;">Falar
-                com Consultor no WhatsApp</button>
-        </form>
-    </section>
-    <section id="precos" style="padding: 5rem 2rem; max-width: 1000px; margin: 0 auto;">
-        <h2 style="text-align: center; color: var(--primary-cyan); margin-bottom: 3rem;">Planos de Implementação</h2>
-
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2.5rem;">
-
-            <div class="card" style="text-align: center; position: relative;">
-                <h3 style="color: white;">SACC Professional</h3>
-                <p style="font-size: 0.9rem; color: #888;">Ideal para advogados autônomos</p>
-                <div style="font-size: 2.5rem; font-weight: bold; margin: 1.5rem 0;">R$ 149<span
-                        style="font-size: 1rem;">/mês</span></div>
-                <ul style="text-align: left; list-style: none; padding: 0; font-size: 0.9rem;">
-                    <li>• Até 3 usuários (Adm + 2)</li>
-                    <li>• Chat Privado Criptografado</li>
-                    <li>• Armazenamento de 5GB</li>
-                    <li>• Suporte via Ticket</li>
-                </ul>
-            </div>
-
-            <div class="card"
-                style="text-align: center; border-color: var(--primary-cyan); transform: scale(1.05); box-shadow: 0 0 15px rgba(0,255,255,0.2);">
-                <div
-                    style="background: var(--primary-cyan); color: black; font-size: 0.7rem; font-weight: bold; padding: 3px 10px; border-radius: 20px; position: absolute; top: -12px; left: 50%; transform: translateX(-50%);">
-                    MAIS VENDIDO</div>
-                <h3 style="color: var(--primary-cyan);">SACC Business</h3>
-                <p style="font-size: 0.9rem; color: #888;">Para escritórios em crescimento</p>
-                <div style="font-size: 2.5rem; font-weight: bold; margin: 1.5rem 0;">R$ 497<span
-                        style="font-size: 1rem;">/mês</span></div>
-                <ul style="text-align: left; list-style: none; padding: 0; font-size: 0.9rem;">
-                    <li>• Usuários Ilimitados</li>
-                    <li>• Painel de Auditoria de Mensagens</li>
-                    <li>• Domínio Customizado (Ex: chat.seuoffice.com)</li>
-                    <li>• Suporte 24h via WhatsApp</li>
-                </ul>
-            </div>
-
-            <div class="card" style="text-align: center;">
-                <h3 style="color: white;">Custom Setup</h3>
-                <p style="font-size: 0.9rem; color: #888;">Projetos de alta complexidade</p>
-                <div style="font-size: 1.5rem; font-weight: bold; margin: 1.5rem 0; color: var(--primary-cyan);">SOB
-                    CONSULTA</div>
-                <ul style="text-align: left; list-style: none; padding: 0; font-size: 0.9rem;">
-                    <li>• Servidor On-Premise (Local)</li>
-                    <li>• Integração com ERP Jurídico</li>
-                    <li>• Treinamento de Equipe In-company</li>
-                    <li>• SLA Garantido em Contrato</li>
-                </ul>
-            </div>
-
+        <div class="card">
+          <span class="material-symbols-outlined icon">smart_toy</span>
+          <h3>Automação com Bots</h3>
+          <p>
+            Desenvolvimento de chatbots inteligentes e bots de automação para
+            otimizar atendimento ao cliente e processos internos.
+          </p>
         </div>
+        <div class="card">
+          <span class="material-symbols-outlined icon">build</span>
+          <h3>Sistemas Sob Medida</h3>
+          <p>
+            Soluções de software personalizadas para atender às necessidades
+            únicas do seu negócio, aumentando a produtividade e a eficiência.
+          </p>
+        </div>
+      </div>
     </section>
-    <script src="script.js"></script>
 
-</body>
+    <!-- Seção de Contato - Revisada -->
+    <section id="contato" class="contact-section">
+      <h2 style="color: var(--primary-cyan)">
+        Vamos Construir Algo Incrível Juntos?
+      </h2>
+      <p>
+        Tem um projeto em mente? Preencha seus dados e entraremos em contato
+        para discutir como nossas soluções podem impulsionar o seu negócio.
+      </p>
 
+      <form id="contactForm" class="contact-form">
+        <input type="text" id="nome" placeholder="Seu Nome Completo" required />
+
+        <input
+          type="text"
+          id="empresa"
+          placeholder="Nome da Empresa"
+          required
+        />
+
+        <textarea
+          id="mensagem"
+          placeholder="Descreva seu projeto ou necessidade"
+          rows="4"
+        ></textarea>
+
+        <button
+          type="button"
+          onclick="enviarContato()"
+          class="cta-button"
+          style="cursor: pointer; border: none"
+        >
+          Enviar Solicitação
+        </button>
+      </form>
+    </section>
+
+    <!-- Seção de Preços - Recontextualizada -->
+    <section id="precos" class="pricing-section">
+      <h2>Planos de Desenvolvimento</h2>
+      <div class="pricing-plans">
+        <div class="card">
+          <h3>Plano Essencial</h3>
+          <p>Ideal para iniciantes e projetos focados</p>
+          <div class="price">R$ 199<span class="period">/mês</span></div>
+          <ul
+            style="
+              text-align: left;
+              list-style: none;
+              padding: 0;
+              font-size: 0.9rem;
+            "
+          >
+            <li>• Desenvolvimento de Landing Page Otimizada</li>
+            <li>• Design Responsivo</li>
+            <li>• Integração com Ferramentas de Marketing</li>
+            <li>• Suporte Básico</li>
+          </ul>
+        </div>
+
+        <div class="card featured">
+          <div class="badge">MAIS POPULAR</div>
+          <h3>Plano Profissional</h3>
+          <p>Para quem busca presença online completa</p>
+          <div class="price">R$ 497<span class="period">/mês</span></div>
+          <ul
+            style="
+              text-align: left;
+              list-style: none;
+              padding: 0;
+              font-size: 0.9rem;
+            "
+          >
+            <li>• Desenvolvimento de Website Institucional ou E-commerce</li>
+            <li>• Design Personalizado</li>
+            <li>• Otimização SEO Básica</li>
+            <li>• Integração de Chatbot</li>
+            <li>• Suporte Prioritário</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Plano Personalizado</h3>
+          <p>Soluções exclusivas para suas necessidades</p>
+          <div
+            class="price"
+            style="
+              font-size: 1.5rem;
+              font-weight: bold;
+              margin: 1.5rem 0;
+              color: var(--primary-cyan);
+            "
+          >
+            SOB CONSULTA
+          </div>
+          <ul
+            style="
+              text-align: left;
+              list-style: none;
+              padding: 0;
+              font-size: 0.9rem;
+            "
+          >
+            <li>• Desenvolvimento de Sistemas Complexos</li>
+            <li>• Automação com Bots Avançados</li>
+            <li>• Integração com Sistemas Existentes</li>
+            <li>• Consultoria e Suporte Dedicado</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <footer>&copy; 2026 SACC Technologies - Soluções Digitais</footer>
+
+    <!-- Placeholder para a função do script.js -->
+    <script>
+      function enviarContato() {
+        // Lógica para enviar os dados do formulário (ex: via fetch ou para um backend)
+        alert("Mensagem enviada! Em breve entraremos em contato.");
+      }
+    </script>
+  </body>
 </html>

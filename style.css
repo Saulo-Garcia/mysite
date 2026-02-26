@@ -114,121 +114,185 @@
             border-top: 1px solid var(--secondary-blue);
         }
 
-        #contato {
-            padding: 5rem 2rem;
-            max-width: 600px;
-            margin: 0 auto;
-            text-align: center;
+        /* Styles for the new Services section */
+        .services {
+          padding: 5rem 2rem;
+          text-align: center;
+          max-width: 1200px;
+          margin: 0 auto;
         }
 
-        #contato h2 {
-            color: var(--primary-cyan);
+        .services h2 {
+          color: var(--primary-cyan);
+          margin-bottom: 3rem;
+          font-size: 2.5rem;
         }
 
-        #whatsappForm {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-            margin-top: 2rem;
+        .service-cards {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+          gap: 2rem;
         }
 
-        #whatsappForm input,
-        #whatsappForm textarea {
-            padding: 1rem;
-            border-radius: 5px;
-            border: 1px solid var(--secondary-blue);
-            background: #1a1a1a;
-            color: white;
+        .card .icon {
+          font-size: 3rem;
+          color: var(--primary-cyan);
+          margin-bottom: 1rem;
+          display: inline-block; /* Ensures the span takes up space for margin */
         }
 
-        #whatsappForm button {
-            cursor: pointer;
-            border: none;
+        /* Styles for the new Contact section */
+        .contact-section {
+          padding: 5rem 2rem;
+          max-width: 600px;
+          margin: 0 auto;
+          text-align: center;
+          background: rgba(10, 10, 10, 0.5); /* Slightly different background for contrast */
+          border-radius: 10px;
+          border: 1px solid var(--secondary-blue);
         }
 
-        #precos {
-            padding: 5rem 2rem;
-            max-width: 1000px;
-            margin: 0 auto;
+        .contact-section h2 {
+          color: var(--primary-cyan);
+          margin-bottom: 1.5rem;
+          font-size: 2.5rem;
         }
 
-        #precos h2 {
-            text-align: center;
-            color: var(--primary-cyan);
-            margin-bottom: 3rem;
+        .contact-section p {
+          color: #ccc;
+          font-size: 1.1rem;
+          margin-bottom: 2rem;
         }
 
-        #precos > div {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2.5rem;
+        .contact-form {
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+          margin-top: 2rem;
         }
 
-        #precos .card {
-            text-align: center;
-            position: relative;
+        .contact-form input[type="text"],
+        .contact-form textarea {
+          padding: 1rem;
+          border-radius: 8px;
+          border: 1px solid var(--secondary-blue);
+          background: #1a1a1a; /* Slightly lighter than body background */
+          color: white;
+          font-size: 1rem;
+          font-family: 'Inter', sans-serif;
         }
 
-        #precos .card h3 {
-            color: white;
+        .contact-form textarea {
+          resize: vertical; /* Allow vertical resizing */
         }
 
-        #precos .card p {
-            font-size: 0.9rem;
-            color: #888;
+        /* Styles for the new Pricing section */
+        .pricing-section {
+          padding: 5rem 2rem;
+          max-width: 1000px;
+          margin: 0 auto;
         }
 
-        #precos .card div {
-            font-size: 2.5rem;
-            font-weight: bold;
-            margin: 1.5rem 0;
+        .pricing-section h2 {
+          text-align: center;
+          color: var(--primary-cyan);
+          margin-bottom: 3rem;
+          font-size: 2.5rem;
         }
 
-        #precos .card div span {
-            font-size: 1rem;
+        .pricing-plans {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+          gap: 2.5rem;
         }
 
-        #precos .card ul {
-            text-align: left;
-            list-style: none;
-            padding: 0;
-            font-size: 0.9rem;
+        /* Re-using .card for pricing plans, but ensuring specific overrides */
+        .pricing-plans .card {
+          text-align: center;
+          position: relative;
+          border: 1px solid var(--secondary-blue); /* Default border */
+          background: rgba(255, 255, 255, 0.03); /* Default card background */
         }
 
-        #precos .card li {
-            margin-bottom: 0.5rem;
+        .pricing-plans .card:hover {
+          border-color: var(--primary-cyan);
         }
 
-        #precos .card:nth-child(2) { /* Estilo para o card MAIS VENDIDO */
-            border-color: var(--primary-cyan);
-            transform: scale(1.05);
-            box-shadow: 0 0 15px rgba(0,255,255,0.2);
+        .pricing-plans .card h3 {
+          color: white; /* Default heading color */
+          font-size: 1.5rem;
+          margin-bottom: 0.5rem;
         }
 
-        #precos .card:nth-child(2) h3 {
-            color: var(--primary-cyan);
+        .pricing-plans .card p {
+          font-size: 0.9rem;
+          color: #888;
+          margin-bottom: 1.5rem;
         }
 
-        #precos .card:nth-child(2) > div:first-child { /* Etiqueta MAIS VENDIDO */
-            background: var(--primary-cyan);
-            color: black;
-            font-size: 0.7rem;
-            font-weight: bold;
-            padding: 3px 10px;
-            border-radius: 20px;
-            position: absolute;
-            top: -12px;
-            left: 50%;
-            transform: translateX(-50%);
+        .pricing-plans .card .price {
+          font-size: 2.5rem;
+          font-weight: bold;
+          margin: 1.5rem 0;
+          color: var(--primary-cyan); /* Default price color */
         }
 
-        #precos .card:nth-child(3) h3 {
-            color: white;
+        .pricing-plans .card .price .period {
+          font-size: 1rem;
+          color: #888;
         }
 
-        #precos .card:nth-child(3) div {
-            font-size: 1.5rem;
-            font-weight: bold;
-            margin: 1.5rem 0;
-            color: var(--primary-cyan);
+        .pricing-plans .card ul {
+          text-align: left;
+          list-style: none;
+          padding: 0;
+          font-size: 0.9rem;
+          margin-top: 1.5rem;
+        }
+
+        .pricing-plans .card ul li {
+          margin-bottom: 0.75rem;
+          padding-left: 1.5rem;
+          position: relative;
+        }
+
+        .pricing-plans .card ul li::before {
+          content: '•'; /* Using a bullet point */
+          color: var(--primary-cyan);
+          font-weight: bold;
+          position: absolute;
+          left: 0;
+          top: 0;
+        }
+
+
+        .pricing-plans .card.featured {
+          border-color: var(--primary-cyan);
+          transform: scale(1.05);
+          box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+          z-index: 1; /* Ensure featured card is above others */
+        }
+
+        .pricing-plans .card.featured h3 {
+          color: var(--primary-cyan);
+        }
+
+        .pricing-plans .card .badge {
+          background: var(--primary-cyan);
+          color: black;
+          font-size: 0.7rem;
+          font-weight: bold;
+          padding: 3px 10px;
+          border-radius: 20px;
+          position: absolute;
+          top: -12px;
+          left: 50%;
+          transform: translateX(-50%);
+          z-index: 2; /* Ensure badge is above featured card */
+        }
+
+        /* Overrides for the third card (Custom Setup) */
+        .pricing-plans .card:nth-child(3) .price {
+          font-size: 1.5rem;
+          color: var(--primary-cyan); /* Explicitly set color */
         }
