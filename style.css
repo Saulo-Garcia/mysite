@@ -292,10 +292,10 @@ footer {
   color: black;
   font-size: 0.7rem;
   font-weight: bold;
-  padding: 3px 10px;
+  padding: 6px 14px;
   border-radius: 20px;
   position: absolute;
-  top: -12px;
+  top: 0px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 2; /* Ensure badge is above featured card */
